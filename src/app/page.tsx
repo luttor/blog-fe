@@ -5,6 +5,7 @@ async function getData() {
   // The return value is *not* serialized
   // You can return Date, Map, Set, etc.
 
+
   if (!res.ok) {
     // This will activate the closest `error.js` Error Boundary
     throw new Error('Failed to fetch data')
@@ -22,7 +23,7 @@ export default async function Home() {
       <h2>All Blogs</h2>
 
       {
-        blogs.map((item) => (
+        blogs.map((item: any) => (
           <Link className="single" href={`/blog/${item["_id"]}`} key={item["_id"]}>
             <h3 className='title'>{item.title}</h3>
             <p className='snippet'>{item.snippet}</p>
