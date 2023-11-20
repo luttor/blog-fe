@@ -13,7 +13,7 @@ const Detail = ({ blog, id }: Props) => {
 
     const deleteBlog = async () => {
         try {
-            const response = await axios.delete(`http://localhost:8080/blogs/${id}`);
+            const response = await axios.delete(`https://blog-be-gray.vercel.app/blogs/${id}`);
             if (response.status === 200) {
                 router.replace("/");
                 router.refresh();

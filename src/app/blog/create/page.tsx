@@ -14,7 +14,7 @@ const CreateBlog = () => {
     const handleSubmit = async (values: Blog) => {
         'use server'
 
-        const response = await axios.post('http://localhost:8080/blogs', values, {
+        const response = await axios.post('https://blog-be-gray.vercel.app/blogs', values, {
             headers: {
                 "Content-Type": 'application/json'
             }

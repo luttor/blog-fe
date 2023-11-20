@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 async function getData() {
-  const res = await fetch('http://localhost:8080/all-blogs', { cache: 'no-store' });
+  const res = await fetch('https://blog-be-gray.vercel.app//all-blogs', { cache: 'no-store' });
   // The return value is *not* serialized
   // You can return Date, Map, Set, etc.
 

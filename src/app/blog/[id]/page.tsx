@@ -1,7 +1,7 @@
 import Detail from "@/components/blog/detail/BlogDetail";
 
 async function getData(id: string) {
-    const res = await fetch(`http://localhost:8080/blogs/${id}`, { cache: 'no-store' });
+    const res = await fetch(`https://blog-be-gray.vercel.app/blogs/${id}`, { cache: 'no-store' });
     // The return value is *not* serialized
     // You can return Date, Map, Set, etc.
 
